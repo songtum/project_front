@@ -1,0 +1,229 @@
+@charset "UTF-8";
+
+/* CSS 초기화 */
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+ul,
+ol {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+
+header {
+	width: 100%;
+	border-bottom: 0.5px solid #888;
+	background: #333;
+}
+header .inner {
+	width: 1180px;
+	height: 45px;
+	margin: 0px auto;
+	position: relative;
+}
+header .inner h1 {
+	padding-top: 12px;
+	bottom: 15px;
+	text-align: center;
+	font: bold 24px/1 'arial';
+	color: #f1eaea;
+}
+
+section {
+	width: 100%;
+	padding: 1px;
+	background-color: #222;
+	box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* 상단 버튼 만들기 */
+section nav.menu {
+	width: 100%;
+}
+section nav.menu::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+section nav.menu a {
+	font-size: 20px;
+	color: #666;
+}
+section nav.menu a:nth-of-type(1) {
+	float: right;
+	margin: 10px;
+}
+section nav.menu a:nth-of-type(2) {
+	float: right;
+	margin: 10px;
+}
+
+section article.profile {
+	width: 100%;
+	text-align: center;
+}
+section article.profile img {
+	border-radius: 10px;
+	margin-bottom: 20px;
+}
+section article.profile h1 {
+	font-weight: bold;
+	font-size: 22px;
+	font-family: 'arial';
+	line-height: 1;
+	color: #bbb;
+	margin-bottom: 5px;
+}
+section article.profile h2 {
+	font-weight: normal;
+	font-size: 12px;
+	font-family: 'arial';
+	color: #bbb;
+	margin-bottom: 30px;
+	margin-left: 5px;
+}
+
+section p {
+	font-weight: normal;
+	font-size: 12px;
+	font-family: 'arial';
+	color: #ffffff;
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+.guestbook {
+	width: 90vw;
+	margin: 10px auto;
+	padding: 0px 20px 20px 20px;
+	background: #ddd;
+	box-shadow: 0 0 30px rgba(36, 38, 45, 0.5);
+	opacity: 0.9;
+	border-radius: 5px;
+	border-bottom: 0.5px solid #111;
+}
+
+.guestbook h3 {
+	text-align: center;
+	margin-bottom: 1px;
+	padding: 3px;
+	font-size: 15px;
+}
+
+.guest-name {
+	width: 15%;
+	font-size: 12px;
+	margin-bottom: 1px;
+	padding: 5px;
+}
+
+.message {
+	width: 100%;
+	font-size: 17px;
+	margin-bottom: 1px;
+	padding: 5px;
+}
+.button {
+	font-size: 12px;
+	margin-bottom: 5px;
+}
+.guestbook-form {
+	border-bottom: 0.5px solid #111;
+	margin-bottom: 5px;
+}
+.guestbook-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+.guestbook-entries {
+	background-color: #f4f4f4;
+	padding: 5px;
+	margin-top: 3px;
+	margin-bottom: 1px;
+	font-size: 15px;
+	width: calc(49.99% - 5px);
+	position: relative;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	word-wrap: break-word;
+}
+
+.guestbook-entries:hover {
+	background-color: #ddd;
+	border: 1px solid #999; /* 마우스를 올릴 때 테두리 추가 */
+}
+
+.delete-btn {
+	display: none;
+	position: absolute;
+	top: 2px;
+	right: 5px;
+	background-color: #777; /* 배경색 변경 */
+	color: white;
+	border: none;
+	padding: 5px 10px;
+	border-radius: 30%;
+	font-size: 10px;
+	cursor: pointer;
+}
+
+.guestbook-entries:hover .delete-btn {
+	display: block; /* 마우스를 올리면 삭제 버튼이 나타남 */
+}
+
+/*footer*/
+footer {
+	width: 100%;
+	padding: 35px 0px;
+	background: #333;
+	border-top: 1px solid #888;
+}
+footer .inner {
+	width: 1180px;
+	margin: 0px auto;
+}
+footer .inner .upper {
+	width: 100%;
+	border-bottom: 1px solid#555;
+	padding-bottom: 20px;
+}
+footer .inner .upper::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+footer .inner .upper h1 {
+	float: left;
+	font: bold 24px/1 'arial';
+	color: #999;
+}
+footer .inner .upper ul {
+	float: right;
+}
+footer .inner .upper ul li {
+	float: left;
+	margin-left: 20px;
+}
+footer .inner .upper ul li a {
+	font: bold 14px/1 'arial';
+	color: #888;
+}
+footer .inner .lower {
+	width: 100%;
+	padding-top: 20px;
+}
+footer .inner .lower address {
+	width: 100%;
+	font: 14px/1.2 'arial';
+	color: #888;
+	margin-bottom: 20px;
+}
+footer .inner .lower p {
+	width: 100%;
+	font: 11px/1 'arial';
+	color: #888;
+}
