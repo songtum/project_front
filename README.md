@@ -1,5 +1,4 @@
 # project_front
-# project_front
 
 학번/이름
 2021204072 / 송태우
